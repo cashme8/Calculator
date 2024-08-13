@@ -1,0 +1,69 @@
+  /* General calculator styling */
+  .calculator {
+    width: 240px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Display styling */
+.display {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 24px;
+    background-color: #e6e6e6;
+    color: #333;
+}
+
+/* Button rows styling */
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* General button styling */
+.button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Number and decimal button styling */
+.button:not(.operator):not(.special) {
+    background-color: #4CAF50;
+}
+
+.button:not(.operator):not(.special):hover {
+    background-color: #45a049;
+}
+
+/* Operator button styling */
+.button.operator {
+    background-color: #FF5722;
+}
+
+.button.operator:hover {
+    background-color: #E64A19;
+}
+
+/* Special buttons (clear, backspace, equals) styling */
+.button.special {
+    background-color: #607D8B;
+}
+
+.button.special:hover {
+    background-color: #546E7A;
+}
